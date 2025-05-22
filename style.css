@@ -1,0 +1,128 @@
+:root {
+  --accent-color: blue;
+  --base-color: white;
+  --text-color: black;
+  --input-color: rgb(247, 241, 241);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(wrapperfolder/3071357.jpg);
+  background-size: cover;
+  background-position: right;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background-color: var(--base-color);
+  height: 100vh;
+  width: max(40%, 600px);
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+form {
+  width: min(400px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+}form > div {
+  display: flex;
+  
+  width: 100%;}
+
+
+
+
+
+
+form label {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--base-color);
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+form input {
+  flex: 1;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid var(--input-color);
+  border-left: none;
+  background-color: var(--input-color);
+  transition: 150ms ease;
+}
+
+form input:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--text-color);
+}
+
+form input::placeholder {
+  color: var(--text-color);
+}
+
+form button {
+  margin-top: 10px;
+  padding: 0.85em 4em;
+  text-transform: uppercase;
+  border-radius: 1000px;
+  background-color: var(--accent-color);
+  color: var(--base-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+
+form button:hover,
+form button:focus {
+  background-color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Signup</h1>
+    <p id="error-message"></p>
+
+    <form id="form">
+      <!-- First & Last Name Row -->
+      <div class="name-row">
+        <div class="input-group">
+          <label for="firstname-input">👤</label>
+          <input type="text" id="firstname-input" placeholder="First Name" />
+        </div>
+        <div class="input-group">
+          <label for="lastname-input">👤</label>
+          <input type="text" id="lastname-input" placeholder="Last Name" />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email-input">@</label>
+        <input type="email" id="email-input" placeholder="Email" />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password-input">🔒</label>
+        <input type="password" id="password-input" placeholder="Password" />
+      </div>
+
+      <!-- Confirm Password -->
+      <div>
+        <label for="confirm-password-input">🔒</label>
+        <input type="password" id="confirm-password-input" placeholder="Confirm Password" />
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script src="ja.js"></script>
+</body>
+</html>
